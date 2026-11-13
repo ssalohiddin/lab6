@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="board-header">
+            <h1 id="welcomeHeading">Welcome</h1>
+            <p id="loadTime"></p>
+        </header>
+
+        <div class="controls">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect">
+                <option value="default">Default</option>
+                <option value="name">Name (A → Z)</option>
+                <option value="marks">Marks (Highest first)</option>
+            </select>
+            <button id="backBtn">Back</button>
+        </div>
+
+        <div id="errorContainer"></div>
+
+        <div class="table-responsive">
+            <table id="marksTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>City</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

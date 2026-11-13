@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Student Portal Registration</h1>
+        
+        <form id="regForm" novalidate>
+            <div class="field-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <small id="charCount"></small>
+            </div>
+
+            <div class="field-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="field-group">
+                <label for="phone">Phone (9 digits)</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="field-group">
+                <label for="password">Password (min 8 chars)</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="field-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <div class="field-group">
+                <label for="city">City</label>
+                <select id="city" name="city" required>
+                    <option value="">--Select City--</option>
+                    <option value="Tashkent">Tashkent</option>
+                    <option value="Samarkand">Samarkand</option>
+                    <option value="Bukhara">Bukhara</option>
+                    <option value="Khiva">Khiva</option>
+                </select>
+                <p id="cityChoice"></p>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <ul id="errorList" class="error-list"></ul>
+    </main>
+</body>
+</html>
